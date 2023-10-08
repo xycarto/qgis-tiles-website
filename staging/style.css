@@ -1,0 +1,40 @@
+@import "node_modules/ol/ol.css";
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-size: 0.75em;
+}
+
+.sidebar{
+  position: absolute;
+  border-radius: 10px;
+  right: 10px;
+  top: 10px;
+  width: 20%;
+  height: auto;
+  background: #ffffff;
+  padding: 10px 10px 10px 10px;
+}
+
+.sidebar{
+  z-index: 10;
+}
+
+.map {
+  width: 100vw;
+  height: 100vh;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
