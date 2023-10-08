@@ -1,0 +1,1 @@
+import{T as e,X as o,M as r,V as s}from"./XYZ-35c5c706.js";const a="https://qgis-tiles.s3.amazonaws.com/tiles/world-webmer/v1/world-webmer/{z}/{x}/{y}.png",n=new e({title:"Monochrome",crossOrigin:"anonymous",source:new o({url:a,wrapX:!0})});new r({layers:[n],target:"map",view:new s({center:[0,0],zoom:0,maxZoom:10})});
