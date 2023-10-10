@@ -1,0 +1,1 @@
+/* empty css              */import{T as o,X as e,M as r,V as n}from"./XYZ-d19488a5.js";const t="https://d22dbabn6r4h6w.cloudfront.net/world-webmer/v1/world-webmer/{z}/{x}/{y}.png",a=new o({title:"Monochrome",crossOrigin:"anonymous",source:new e({url:t,wrapX:!0})});new r({layers:[a],target:"map",view:new n({center:[0,0],zoom:0,maxZoom:10})});

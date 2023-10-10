@@ -1,8 +1,13 @@
 @import "node_modules/ol/ol.css";
 
-body{
+body {
   margin: 0;
   padding: 0;
+  background-color: #444444;
+}
+
+.bgsub {
+  background-color: #ffffff;
 }
 
 .grid-container{
@@ -37,4 +42,48 @@ body{
   top: 0;
   bottom: 0;
   width: 100%;
+}
+
+#toptitle {
+  color: #ffffff;
+}
+
+.container{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  }
+
+.child {  
+  display: flex;
+  flex-grow: 1;
+  min-height: 200px; 
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+#nztm {
+  border-style: solid;
+  border-color: #6f8a91;
+}
+
+#webmer {
+  border-style: solid;
+  border-color: #6f8a91;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  } 
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  font-weight: 900;
 }

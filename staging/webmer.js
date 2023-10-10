@@ -3,7 +3,7 @@ import {Map, View} from 'ol';
 import TileLayer from 'ol/layer/Tile';
 import XYZ from 'ol/source/XYZ.js';
 
-const xyzUrl = "https://qgis-tiles.s3.amazonaws.com/tiles/world-webmer/v1/world-webmer/{z}/{x}/{y}.png"
+const xyzUrl = "https://d22dbabn6r4h6w.cloudfront.net/world-webmer/v1/world-webmer/{z}/{x}/{y}.png"
 
 const mono = new TileLayer({
   title: 'Monochrome',

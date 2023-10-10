@@ -20,8 +20,8 @@ var origin = [-1000000, 10000000];
 var resolutions = [ 8960.0, 4480.0, 2240.0, 1120.0, 560, 280, 140, 70, 28, 14, 7, 2.8];
 const matrixIds = [0, 1, 2];
 
-const xyzUrlColour = "https://qgis-tiles.s3.amazonaws.com/tiles/full-nz-colour/v1/full-nz-colour/{z}/{x}/{y}.png"
-const xyzUrlMono = "https://qgis-tiles.s3.amazonaws.com/tiles/full-nz-mono/v1/full-nz-mono/{z}/{x}/{y}.png"
+const xyzUrlColour = "https://d22dbabn6r4h6w.cloudfront.net/full-nz-colour/v1/full-nz-colour/{z}/{x}/{y}.png"
+const xyzUrlMono = "https://d22dbabn6r4h6w.cloudfront.net/full-nz-mono/v1/full-nz-mono/{z}/{x}/{y}.png"
 
 const mono = new TileLayer({
   title: 'monochrome',
@@ -70,7 +70,7 @@ const map = new Map ({
     center: fromLonLat([177.0,-39.5], nztmProjection),
     zoom: 1,
     minResolution: 2.8,
-    maxResolution: 2240.0,
+    maxResolution: 8960.0,
     constrainResolution: true,
     enableRotation: false,
   })
