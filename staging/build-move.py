@@ -21,6 +21,13 @@ shutil.copy(f"{dir_from}/dist/webmer.html", f"{dir_to}")
 shutil.copy(f"{dir_from}/dist/nztm.html", f"{dir_to}")
 
 # Fix "assets" path in HTML
+with open(f"{dir_to}/index.html", 'r') as file:
+    data = file.read()
+    data = data.replace("/assets", "./assets")
+    
+with open(f"{dir_to}/index.html", 'w') as file:
+    file.write(data)
+
 with open(f"{dir_to}/nztm.html", 'r') as file:
     data = file.read()
     data = data.replace("/assets", "./assets")
