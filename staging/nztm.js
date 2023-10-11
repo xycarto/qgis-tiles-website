@@ -26,6 +26,7 @@ const xyzUrlMono = "https://d22dbabn6r4h6w.cloudfront.net/full-nz-mono/v1/full-n
 const mono = new TileLayer({
   title: 'monochrome',
   crossOrigin: 'anonymous',
+  visible: false,
   source: new XYZ({
     url: xyzUrlMono,
     wrapX: true,
@@ -68,7 +69,7 @@ const map = new Map ({
   view: new View({
     projection: nztmProjection,
     center: fromLonLat([177.0,-39.5], nztmProjection),
-    zoom: 1,
+    zoom: 3,
     minResolution: 2.8,
     maxResolution: 8960.0,
     constrainResolution: true,
